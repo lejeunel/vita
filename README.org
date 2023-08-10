@@ -1,23 +1,11 @@
 #+title: Curriculum Vitae with Org-mode
-#+author: Diego Zamboni
+#+author: Laurent Lejeune
 
-This repository contains the source for my CV. The document is maintained in org-mode. The main export format is to LaTeX and PDF. You can find the rendered document [[https://zzamboni.org/vita/][in my website]].
+Shameless fork of [[https://github.com/zzamboni/vita][zzamboni/vita]].
 
-My goal is to produce the CV from an Org file which focuses on the semantics of the CV, without worrying about the format. Ultimately, the CV should be exportable to multiple formats from the same document.
+This repository contains the source for my CV. The document is maintained in org-mode. The main export format is to LaTeX and PDF.
 
 The export to LaTeX is done using the [[https://github.com/posquit0/Awesome-CV][AwesomeCV]] LaTeX class (with some of my own modifications, which you can find in this directory) and the [[https://titan-c.gitlab.io/org-cv/#using-awesomecv][ox-awesomecv]] exporter I contributed to the [[https://titan-c.gitlab.io/org-cv/][Org-CV]] package.
-
-Exporting to HTML using the standard =ox-html= exporter works fairly well, but the output is not optimally formatted. The main issue is that a lot of the semantic information (e.g. job dates, employers, etc.) are specified in property drawers, and =ox-html= does not know how to extract/format them. As a workaround, I have configured that those properties should be exported using the =prop= option. This is less than ideal because the properties are exported as-they-are, without any special formatting. You can find an example export in [[https://zzamboni.org/files/vita/zamboni-vita.html][zamboni-vita.html]].
-
-Exporting to ASCII uses the same trick as for HTML, but the result looks quite reasonable. I use the Plain Text UTF-8 exporter. You can see the output in [[https://zzamboni.org/files/vita/zamboni-vita.txt][zamboni-vita.txt]].
-
-Read the rest of this document for some more details, if you would like to use it as a starting point to write your own CV. Let me know if you have any questions or feedback!
-
-* Table of contents :TOC_1:
-- [[#org-mode-configuration][org-mode configuration]]
-- [[#latex-configuration][LaTeX configuration]]
-- [[#document-structure][Document structure]]
-- [[#next-steps-and-missing-stuff][Next steps and missing stuff]]
 
 * org-mode configuration
 
@@ -64,11 +52,6 @@ Some things you may find useful:
     ,#+extrainfo: <other private information>
 #+end_example
 
-  When encrypted, this information is simply ignored. When I want to produce a version of my CV which includes this information, I run ~M-x org-decrypt-entry~, which prompts for my GPG passphrase. Then, *without saving the file*, I run the following export command:
-
-  #+begin_src emacs-lisp
-    (org-export-to-file 'awesomecv "zamboni-vita-private.tex")
-  #+end_src
 - Org-CV does not yet have integration into the org-mode Export menu. For now, the export is done manually by executing a command like the following:
   #+begin_src emacs-lisp
 (org-export-to-file 'awesomecv "zamboni-vita.tex")
@@ -77,13 +60,6 @@ Some things you may find useful:
   #+begin_src org
     ,* Local Variables :ARCHIVE:noexport:
     # Local Variables:
-    # eval: (add-hook 'after-save-hook (lambda () (org-export-to-file 'awesomecv "zamboni-vita.tex")) :append :local)
+    # eval: (add-hook 'after-save-hook (lambda () (org-export-to-file 'awesomecv "lejeune-vita.tex")) :append :local)
     # End:
   #+end_src
-
-* Next steps and missing stuff
-
-- I would like to improve Org-CV's ox-hugocv to support the additional properties introduced by ox-awesomecv, so that the Hugo Markdown export looks good and can be used instead of ox-html. This would allow me to publish an HTML version of my CV in my website.
-- Add integration of Org-CV's exporters into the org-mode Export menu.
-- I'm torn about the use of fully-semantic properties for specifying information in the CV. On one hand, it's the cleanest and easiest way of doing it. On the other hand, it makes it harder to use the default org-mode exporters while still preserving the information in the output.
-- I wonder if it would make more sense to specify =CV_ENV= as a tag in the headline.

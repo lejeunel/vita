@@ -1,0 +1,73 @@
+@article{lejeune21,
+title = {A positive/unlabeled approach for the segmentation of medical sequences using point-wise supervision},
+journal = {Medical Image Analysis},
+volume = {73},
+pages = {102185},
+year = {2021},
+issn = {1361-8415},
+doi = {https://doi.org/10.1016/j.media.2021.102185},
+url = {https://www.sciencedirect.com/science/article/pii/S1361841521002310},
+author = {Laurent Lejeune and Raphael Sznitman},
+keywords = {Transductive learning, Positive-unlabeled learning, Semantic segmentation, Point-wise supervision},
+abstract = {The ability to quickly annotate medical imaging data plays a critical role in training deep learning frameworks for segmentation. Doing so for image volumes or video sequences is even more pressing as annotating these is particularly burdensome. To alleviate this problem, this work proposes a new method to efficiently segment medical imaging volumes or videos using point-wise annotations only. This allows annotations to be collected extremely quickly and remains applicable to numerous segmentation tasks. Our approach trains a deep learning model using an appropriate Positive/Unlabeled objective function using sparse point-wise annotations. While most methods of this kind assume that the proportion of positive samples in the data is known a-priori, we introduce a novel self-supervised method to estimate this prior efficiently by combining a Bayesian estimation framework and new stopping criteria. Our method iteratively estimates appropriate class priors and yields high segmentation quality for a variety of object types and imaging modalities. In addition, by leveraging a spatio-temporal tracking framework, we regularize our predictions by leveraging the complete data volume. We show experimentally that our approach outperforms state-of-the-art methods tailored to the same problem.}
+}
+
+@article{lejeune18,
+title = {Iterative multi-path tracking for video and volume segmentation with sparse point supervision},
+journal = {Medical Image Analysis},
+volume = {50},
+pages = {65-81},
+year = {2018},
+issn = {1361-8415},
+doi = {https://doi.org/10.1016/j.media.2018.08.007},
+url = {https://www.sciencedirect.com/science/article/pii/S1361841518306637},
+author = {Laurent Lejeune and Jan Grossrieder and Raphael Sznitman},
+keywords = {Semi-supervised learning, Semantic segmentation, Multi-path tracking, Point-wise supervision},
+abstract = {Recent machine learning strategies for segmentation tasks have shown great ability when trained on large pixel-wise annotated image datasets. It remains a major challenge however to aggregate such datasets, as the time and monetary cost associated with collecting extensive annotations is extremely high. This is particularly the case for generating precise pixel-wise annotations in video and volumetric image data. To this end, this work presents a novel framework to produce pixel-wise segmentations using minimal supervision. Our method relies on 2D point supervision, whereby a single 2D location within an object of interest is provided on each image of the data. Our method then estimates the object appearance in a semi-supervised fashion by learning object-image-specific features and by using these in a semi-supervised learning framework. Our object model is then used in a graph-based optimization problem that takes into account all provided locations and the image data in order to infer the complete pixel-wise segmentation. In practice, we solve this optimally as a tracking problem using a K-shortest path approach. Both the object model and segmentation are then refined iteratively to further improve the final segmentation. We show that by collecting 2D locations using a gaze tracker, our approach can provide state-of-the-art segmentations on a range of objects and image modalities (video and 3D volumes), and that these can then be used to train supervised machine learning classifiers.}
+}
+
+@article{lejeune17,
+  author       = {Laurent Lejeune and
+                  Mario Christoudias and
+                  Raphael Sznitman},
+  title        = {Expected exponential loss for gaze-based video and volume ground truth
+                  annotation},
+  journal      = {CoRR},
+  volume       = {abs/1707.04905},
+  year         = {2017},
+  url          = {http://arxiv.org/abs/1707.04905},
+  eprinttype    = {arXiv},
+  eprint       = {1707.04905},
+  timestamp    = {Mon, 13 Aug 2018 16:46:24 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/LejeuneCS17.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{lejeune14,
+  title={Evaluation of ensemble averaging methods in 3D ballistocardiography},
+  author={Laurent Lejeune and Enrico Gianluca Caiani and Gordon Kim Prisk and Pierre-François Migeotte},
+  journal={2014 36th Annual International Conference of the IEEE Engineering in Medicine and Biology Society},
+  year={2014},
+  pages={5176-5179},
+  url={https://api.semanticscholar.org/CorpusID:24243166}
+}
+
+@inproceedings{lejeune15,
+  title={MRI-based aortic blood flow model in 3D ballistocardiography},
+  author={Lejeune, Laurent and Prisk, G Kim and Nonclercq, Antoine and Migeotte, Pierre-Fran{\c{c}}ois},
+  booktitle={2015 37th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)},
+  pages={7171--7174},
+  year={2015},
+  organization={IEEE}
+}
+
+@article{guerquin11,
+  title={Realistic analytical phantoms for parallel magnetic resonance imaging},
+  author={Guerquin-Kern, Matthieu and Lejeune, Laurent and Pruessmann, Klaas Paul and Unser, Michael},
+  journal={IEEE Transactions on Medical Imaging},
+  volume={31},
+  number={3},
+  pages={626--636},
+  year={2011},
+  publisher={IEEE}
+}

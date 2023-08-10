@@ -1,0 +1,256 @@
+:CV_CONFIG:
+# AwesomeCV and LaTeX configuration section
+
+# AwesomeCV configuration options
+#+photo: ./images/me.jpg
+#+photostyle: right,noedge
+#+cvcolor: awesome-concrete
+#+cvhighlights: false
+#+cvcolorizelinks: awesome-skyblue
+#+cvunderlinelinks: false
+#+cvfooter_left: \today\\~
+#+cvfooter_right: \thepage\\~
+
+# These options are useful for HTML or ASCII export, and harmless for
+# AwesomeCV, so I leave them on all the time
+#+options: num:1
+#+options: prop:("FROM" "TO" "LOCATION" "EMPLOYER" "SCHOOL" "ORGANIZATION" "DATE" "POSITION" "LABEL")
+#+options: toc:nil
+
+# LaTeX options
+
+#+latex_class_options: [12pt,a4paper]
+
+# Macro for bibliographical citations
+#+macro: cvcite \cite{$1}
+
+# Commands for including the Publications list using biblatex
+# defernumbers=true makes the "Publications" section label the entries
+# consecutively, instead of in some semi-random order determined by LaTeX.
+#+latex_header: \usepackage[defernumbers=true,style=numeric,sorting=ydnt]{biblatex}
+#+latex_header: \addbibresource{lejeune.bib}
+#+latex_header: \defbibheading{cvbibsection}[\bibname]{\cvsubsection{#1}}
+
+# Some font and separator redefinitions for the AwesomeCV class
+#+latex_header: \renewcommand{\acvHeaderSocialSep}{\enskip\cdotp\enskip}
+#+latex_header: \renewcommand{\acvHeaderIconSep}{~}
+#+latex_header: \renewcommand*{\bodyfontlight}{\sourcesanspro}
+#+latex_header: \renewcommand*{\bibfont}{\paragraphstyle}
+#+latex_header: \renewcommand*{\entrylocationstyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
+#+latex_header: \renewcommand*{\subsectionstyle}{\entrytitlestyle}
+#+latex_header: \renewcommand*{\headerquotestyle}[1]{{\fontsize{8pt}{1em}\bodyfont #1}}
+
+:END:
+
+#+title: Machine Learning Researcher · Computer Vision · Computer Scientist
+#+author: Laurent Lejeune
+#+email: me@lejeunel.org
+#+mobile: +33 7 83 39 54 11
+#+linkedin: laurent-lejeune-a3b83044
+#+github: lejeunel
+
+* Key skills
+:PROPERTIES:
+:CV_ENV:   cvskills
+:END:
+
+- Communication :: Excellent written and spoken communication skills, extensive public speaking and writing in academic and industrial settings. Able to express complex technical matter across disciplinary frontiers.
+- Technology :: Broad and deep IT skills, computer vision and machine learning frameworks, relational databases, cloud computing, API for data management, programming languages, etc.
+- Machine Learning :: Computer vision, graph optimization, self/semi-supervised methods, metric learning, novelty detection, etc.
+- Cloud Computing :: AWS architecture, infrastructure, development and security.
+- Data Engineering :: Extensive skills in managing large and complex datasets: Relational database (SQL), REST API.
+- Work ethics & soft skills :: Strong focus on quality: write clear, tested, and easy to maintain software. Accountable team-player. Good at listening and anticipating needs.
+- Research :: Ph.D. in Computer Vision and Machine Learning. R&D in crop science industry.
+- Languages :: French (native), English (100%)
+
+* Professional and academic highlights
+
+#+latex: \begin{cvparagraph}
+- Research & Development data scientist at [[https://www.bayer.com/en/agriculture][Bayer Crop Science]]
+  + Developed a novel computer vision and machine learning strategy to allow the exploration of fungicide chemical compound characterization through microscopy images.
+  + Leveraged metric learning and computer vision methods to allow domain-experts to assess biological activity and phenotypical impact of compound treatments.
+  + Focus on producing tools that are intuitive and easy to use for biologists.
+- Data engineering and cloud computing at [[https://www.bayer.com/en/agriculture][Bayer Crop Science]]
+  + Designed and implemented a solution to store and retrieve large and complex datasets.
+  + Use relational database system and Python framework to model complex relations between data items.
+  + Developed a REST API to query, contribute, and annotate datasets.
+  + Deployed service in the cloud (AWS), and managed security requirements.
+- Machine learning and computer vision
+  + Contributed novel methods on complex problems applied to medicine and biology.
+  + Deep Learning models, Convolutional Neural Networks, graph optimization, bayesian methods etc.
+  + Devised frameworks leveraging self/semi-supervised learning, metric learning, image and video segmentation, etc.
+- Contributions to the scientific community
+  + Author of multiple peer-reviewed (high-impact journals, conferences, workshops) articles.
+  + Tools and methods with a broad range of use for domain-experts.
+
+
+#+latex: \end{cvparagraph}
+
+* Experience
+:PROPERTIES:
+:CV_ENV:   cventries
+:END:
+
+** Bayer Crop Science
+:PROPERTIES:
+:CV_ENV:   cvemployer
+:LOCATION: Bayer SAS, Lyon, France
+:FROM: 2021
+:TO: 2023
+:END:
+*** R&D in computer vision and machine learning
+:PROPERTIES:
+:CV_ENV:   cvsubentry
+:FROM: 2021
+:TO: 2023
+:END:
+- Devise computer vision and machine learning methods to characterize compound-treatment on filamentous fungi from fluorescence microscopy images.
+- Leverage convolutional networks (deep learning) and metric learning to estimate biological activity of compounds in an interpretable manner.
+- Contribute to the elaboration of large-scale microscopy imaging protocol.
+- Manage large and complex image datasets on the cloud.
+
+*** Data engineering
+:PROPERTIES:
+:CV_ENV:   cvsubentry
+:FROM: 2021
+:TO: 2023
+:END:
+- Design a relational database model to store and query meta-data of imaging experiments.
+- Implement a backend in Python using Flask.
+- Implement a REST API to query and contribute data.
+- Deploy stack on cloud (AWS) and setup security (OAuth).
+
+** Heart Kinetics
+:PROPERTIES:
+:CV_ENV:   cvemployer
+:LOCATION: Brussels, Belgium
+:FROM: 2012
+:TO: 2016
+:END:
+*** R&D in image and signal processing
+:PROPERTIES:
+:CV_ENV:   cvsubentry
+:FROM: 2012
+:TO: 2016
+:END:
+- Modelling of the cardiovascular system in
+    3D-[[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4274997/][ballistocardiography]].
+- Develop and validate a blood flow model using MRI data.
+
+*** Engineering an embedded device
+:PROPERTIES:
+:CV_ENV:   cvsubentry
+:FROM: 2014
+:TO: 2016
+:END:
+- Hardware design (electrocardiogram, accelerometer and microcontroller)
+- Develop an embedded data logger for the acquisition of electrocardiogram ballistocardiogram
+
+* Education and teaching
+:PROPERTIES:
+:CV_ENV:   cventries
+:END:
+
+** PhD in machine learning and biomedical engineering
+:PROPERTIES:
+:CV_ENV:   cvschool
+:LOCATION: Bern, Switzerland
+:SCHOOL: ARTORG Center, University of Bern
+:FROM: <2016-08-01>
+:TO: <2021-02-01>
+:END:
+- Thesis:
+  + Title: Segmention of Video and Volumetric Medical Sequences at Frame-rate using Sparse Point-wise Supervision
+  + Advisors: [[https://scholar.google.com/citations?user=tG0ow2UAAAAJ&hl=en&oi=ao][Raphael Sznitman]]
+  + Contributions:
+    - CNN training method to segment images using minimal annotations (a single 2D location per frame). Novel recursive bayesian strategy to estimate class-priors
+        in a self-supervised fashion.
+    - Graph optimization framework inspired by multi-object tracking to infer the segmentation mask of objects on videos and volumes.
+- Teaching assistant: Signal and image processing.
+- M.S. project supervision of Jan Grossrieder: Exploration of unsupervised and weakly-supervised deep feature learning
+** Master's thesis
+:PROPERTIES:
+:CV_ENV:   cvschool
+:LOCATION: Vancouver, Canada
+:SCHOOL: University of British Columbia
+:FROM: <2011-03-01>
+:TO: <2011-10-01>
+:END:
+- Title: Gripping performance evaluation of upper limb prosthetic devices
+- Advisor: [[https://www.linkedin.com/in/ezra-kwok-220b6411][Ezra Kwok]]
+- Contributions: Development of a physical apparatus and signal processing
+    tools for the evaluation of the gripping performances of upper limb
+    prosthetics.
+
+** Minor in Biomedical Engineering
+:PROPERTIES:
+:CV_ENV:   cvschool
+:LOCATION: Lausanne, Switzerland
+:SCHOOL: École polytechnique fédérale de Lausanne
+:FROM: <2010-09-01>
+:TO: <2011-02-01>
+:END:
+- Project:
+  + Title: Realistic Analytical Phantoms for Parallel Magnetic Resonance Imaging
+  + Advisors: [[https://scholar.google.com/citations?user=nKVDcQoAAAAJ&hl=en][Michael Unser]], [[https://scholar.google.com/citations?user=esEKAi8AAAAJ&hl=fr][Matthieu Guerquin-Kern]]
+- Courses: Bioinspired artificial intelligence, Biomaterials, Biomedical Signal Processing, Biometrics, Sensors in medical instrumentation, bioMEMS
+** M.S. in Electrical Engineering (Signal and Image Processing)
+:PROPERTIES:
+:CV_ENV:   cvschool
+:LOCATION: Lausanne, Switzerland
+:SCHOOL: École polytechnique fédérale de Lausanne
+:FROM: <2009-09-01>
+:TO: <2011-05-01>
+:END:
+
+- Project
+  + Title: Atrial Fibrillation signals classification using entropy measures.
+  + Advisor: [[https://scholar.google.com/citations?hl=en&user=-0EP2zAAAAAJ][J.-M. Vesin]]
+- Courses: Advanced Signal Processing, Image Processing, Image Analysis
+    and Pattern Recognition, Microwaves, Optical Signal Processing, Architectures
+    for Information Processing, Image and Video Processing, Image Communication,
+    Media Security, Speech Processing
+
+* Languages
+:PROPERTIES:
+:CV_ENV:   cvskills
+:END:
+
+- French :: native
+- English :: full professional proficiency
+
+* Software Skills
+:PROPERTIES:
+:CV_ENV:   cvskills
+:END:
+
+- Languages :: Python, C/C++, Bash, SQL, LaTeX, etc.
+- Machine Learning :: PyTorch, TensorFlow, Keras, Scikit-learn
+- Image processing :: Scikit-image, Pillow
+- Data science :: Jupyter, streamlit, matplotlib
+- Web :: HTML, CSS, Flask, Django, REST API
+- Cloud :: AWS (ECS, cloud formation, RDS)
+- Security :: OAuth with Azure Active Directories
+- Operating Systems :: Linux, Windows
+- Others :: Git, Docker
+
+* Publications
+:PROPERTIES:
+:CUSTOM_ID: publications
+:END:
+
+#+begin_export latex
+\nocite{*}
+\printbibliography[heading=none]
+#+end_export
+
+* References
+
+#+latex: \begin{cvparagraph}
+Available by request.
+#+latex: \end{cvparagraph}
+
+* Local Variables :ARCHIVE:noexport:
+# Local Variables:
+# eval: (add-hook 'after-save-hook (lambda () (org-export-to-file 'awesomecv "src/lejeune-vita.tex")) :append :local)
+# End:
