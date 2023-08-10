@@ -1,6 +1,6 @@
-.PHONY: all clean publish
+.PHONY: all clean
 
-OUTPUTS = build/lejeune-vita/lejeune-vita.pdf build/lejeune-resume/lejeune-resume.pdf
+OUTPUTS = build/lejeune-vita/lejeune-vita.pdf
 
 all:
 	tectonic -X build

@@ -59,7 +59,7 @@
 - Machine Learning :: Computer vision, graph optimization, self/semi-supervised methods, metric learning, novelty detection, etc.
 - Cloud Computing :: AWS architecture, infrastructure, development and security.
 - Data Engineering :: Extensive skills in managing large and complex datasets: Relational database (SQL), REST API.
-- Work ethics :: Strong focus on quality: write clear, tested, and easy to maintain documentation and software. Accountable team-player. Good at listening and anticipating needs.
+- Work ethics :: Strong focus on quality: write clear, tested, and easy to maintain documentation and software. Accountable team-player. Excellent at listening, formalizing complex problems and anticipating scientific and business needs.
 - Communication :: Excellent written and spoken communication skills, extensive public speaking and writing in academic and industrial settings. Able to express complex technical matter across disciplinary frontiers.
 - Research :: Ph.D. in Computer Vision and Machine Learning. R&D in crop science and health industry.
 - Languages :: French (native), English (100%)
