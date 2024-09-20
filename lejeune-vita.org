@@ -42,8 +42,8 @@
 
 :END:
 
-#+title: Machine Learning Researcher · Computer Vision · Computer Scientist
-#+author: Laurent Lejeune
+#+title: Machine Learning Researcher · Computer Vision · Computer Scientist (7 YOE)
+#+author: Laurent Lejeune,PhD
 #+email: me@lejeunel.org
 #+mobile: +33 7 83 39 54 11
 #+linkedin: laurent-lejeune-a3b83044
@@ -56,7 +56,7 @@
 :END:
 
 - Technology :: Broad and deep IT skills, computer vision and machine learning frameworks, relational databases, cloud computing, API for data management, programming languages, etc.
-- Machine Learning :: Computer vision, graph optimization, self/semi-supervised methods, metric learning, novelty detection, etc.
+- Machine Learning :: Deep Learning, computer vision, graph optimization, self/semi-supervised methods, metric learning, novelty detection, etc.
 - Cloud Computing :: AWS architecture, infrastructure, development and security.
 - Data Engineering :: Extensive skills in managing large and complex datasets: Relational database (SQL), REST API.
 - Work ethics :: Strong focus on quality: write clear, tested, and easy to maintain documentation and software. Accountable team-player. Excellent at listening, formalizing complex problems and anticipating scientific and business needs.
@@ -224,7 +224,7 @@
 :CV_ENV:   cvskills
 :END:
 
-- Languages :: Python, C/C++, Bash, SQL, LaTeX, etc.
+- Languages :: Python, C/C++, Golang, Bash, SQL, LaTeX, etc.
 - Machine Learning :: PyTorch, TensorFlow, Keras, Scikit-learn
 - Image processing :: Scikit-image, Pillow
 - Data science / engineering :: Jupyter, streamlit, matplotlib, SQLAlchemy
